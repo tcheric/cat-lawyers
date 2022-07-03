@@ -1,0 +1,13 @@
+- 4x html files
+  - Home
+  - Expertise (types)
+  - Case News
+  - Team
+  - Contact
+- 10 HTML tags
+- Bootstrap
+- JS for interactivity
+  - video playing
+  - Pause, mute
+- responsive
+- cat lawyers

@@ -1,0 +1,105 @@
+/* Img-text section */
+.container {
+  height: 590px;
+  position: relative;
+}
+
+#top-image {
+  height: 590px;
+  width: 100%;
+  position: absolute;
+  filter: grayscale(30%) blur(3px);
+  animation-duration: 0.7s;
+  animation-name: imgslidein;
+}
+
+@keyframes imgslidein {
+  from {
+    opacity: 0;
+    height: 600px;
+    filter: grayscale(0%) blur(0px);
+  }
+
+  to {
+    opacity: 1;
+    height: 590px;
+    filter: grayscale(30%) blur(3px);
+  }
+}
+
+.container h2 {
+  font-family: Didot-R, Helvetica, Arial, sans-serif;
+  font-family: Lucida, serif;
+  z-index: 5;
+  position: absolute;
+  margin: 0;
+  left: 50%;
+  top: 275px;
+  text-align: center;
+  font-size: 35px;
+  width: 100%;
+  font-weight: normal;
+  color: rgb(39, 34, 28);
+}
+
+/* People section */
+#text-body {
+  height: 1040px;
+}
+
+#team-container {
+  width: 900px;
+  /* background-color: red; */
+  /* height: 600px; */
+  margin-inline: auto;
+  box-sizing: border-box;
+  font-size: 0;
+}
+
+.person {
+  /* background-color: grey; */
+  width: 300px;
+  display: inline-block;
+  margin: 0;
+  margin-bottom: 25px;
+}
+
+#team-container img {
+  width: 220px;
+  height: 220px;
+  border-radius: 150px;
+  border: 1px solid black;
+  box-shadow: 0 0 10px 2px rgb(77, 77, 77);
+  margin: 20px;
+  margin-bottom: 10px;
+  margin-inline: 40px;
+  box-sizing: border-box;
+}
+
+#team-container img:hover {
+  transform: scale(1.02);
+  transition: all 0.4s ease;
+}
+
+#text-body .name {
+  width: 100%;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 5px;
+  font-weight:600;
+  font-size: 17px;
+  text-transform: uppercase;
+  font-family: "Open Sans", Arial, sans-serif;
+  /* font-family: Futura-M, Arial, sans-serif; */
+  letter-spacing: 2px;
+}
+
+.title {
+  width: 100%;
+  text-align: center;
+  margin: 0;
+  font-family: "Open Sans", Arial, sans-serif;
+  letter-spacing: 1px;
+  font-size: 16px;
+  color: rgb(43, 35, 26);
+}
