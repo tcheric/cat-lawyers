@@ -22,8 +22,8 @@ class Header extends HTMLElement {
   } 
 
   connectedCallback() {
-    if ((window.location.href === "file:///home/erictc/misc/cs50/cs50xW8/Homepage/page/cases.html") || 
-        (window.location.href === "file:///home/erictc/misc/cs50/cs50xW8/Homepage/page/contact.html")) {
+    if ((window.location.href === "https://cerulean-sopapillas-9177e3.netlify.app/page/cases.html") || 
+        (window.location.href === "https://cerulean-sopapillas-9177e3.netlify.app/page/contact.html")) {
       console.log("set white")
       headerTemplate.innerHTML = `
         <link rel="stylesheet" href="../css/cases.css">
