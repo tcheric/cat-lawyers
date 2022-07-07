@@ -71,7 +71,7 @@ section {
 /* section 2 */
 
 #map {
-  filter: hue-rotate(65deg) brightness(95%) saturate(130%) invert(90%) grayscale(80%);
+  filter: hue-rotate(65deg) brightness(100%) saturate(550%) invert(90%) grayscale(70%);
   display: flex;
 }
 
@@ -85,7 +85,6 @@ section {
 /* section 3 */
 #form {
   height: 550px;
-  
 }
 
 #form-container {

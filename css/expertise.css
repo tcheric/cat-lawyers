@@ -14,7 +14,7 @@
   width: 100%;
   object-fit: cover;
   position: absolute;
-  filter: grayscale(40%) blur(3px);
+  filter: grayscale(40%) blur(1px);
   animation-duration: 0.7s;
   animation-name: imgslidein;
 }
@@ -29,7 +29,7 @@
   to {
     opacity: 1;
     height: 590px;
-    filter: grayscale(40%) blur(3px);
+    filter: grayscale(40%) blur(1px);
   }
 }
 
