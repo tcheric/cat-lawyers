@@ -8,8 +8,8 @@
   height: 590px;
   width: 100%;
   position: absolute;
-  filter: grayscale(30%) blur(1px);
-  animation-duration: 0.7s;
+  filter: grayscale(30%) blur(0px);
+  animation-duration: 1.2s;
   animation-name: imgslidein;
 }
 
@@ -17,13 +17,13 @@
   from {
     opacity: 0;
     height: 600px;
-    filter: grayscale(0%) blur(0px);
+    filter: grayscale(0%) blur(4px);
   }
 
   to {
     opacity: 1;
     height: 590px;
-    filter: grayscale(30%) blur(1px);
+    filter: grayscale(30%) blur(0px);
   }
 }
 

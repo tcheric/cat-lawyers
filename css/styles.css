@@ -13,6 +13,7 @@
   src: url(../fonts/futura-light-bt.ttf);
 }
 
+
 html[scroll-top="true"] {
   --header-buttons: transparent;
   --header: transparent;
@@ -20,13 +21,13 @@ html[scroll-top="true"] {
 }
 
 html[scroll-top="false"] {
-  --header-buttons: rgb(160, 160, 193);
-  --header: rgb(241, 232, 207);
-  --shadow: 0px 1px 3px #d5d5d5;
+  --header-buttons: white;
+  --header: white;
+  --shadow: 0px 2px 4px #c8c8c8;
 }
 
 body {
-  font-family: Lucida, serif;
+  font-family: 'Times New Roman', 'Times', serif;
   margin: 0;
 }
 
@@ -40,16 +41,15 @@ body {
 h1 {
   font-family: Didot-R, Helvetica, serif;
   font-weight: normal;
-  font-size: 70px;
+  font-size: 50px;
   color: rgb(62, 54, 45);
   margin: 0;
   min-width: 420px;
-  margin-left: 30px;
 }
 
 h1 span {
   color: rgb(134, 148, 189);
-  font-size: 66px;
+  font-size: 60px;
 }
 
 a {
@@ -62,7 +62,7 @@ header {
   position: fixed;
   top: 0;
   width: 100%;
-  height: 88px;
+  height: 78px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -74,13 +74,22 @@ header {
   top:0;
   width: 0; 
   height: 0; 
-  border-right: 35px solid transparent;
-  border-bottom: 88px solid var(--header);
-  margin-right: 10px;
+  border-right: 20px solid transparent;
+  border-top: 44px solid var(--header);
+  margin: 0;
+  margin-right: 15px;
+}
+
+.arrow-up {
+  top:0;
+  width: 0; 
+  height: 0; 
+  border-right: 20px solid transparent;
+  border-bottom: 44px solid var(--header);
+  margin: 0;
 }
 
 .header-buttons {
-  padding-right: 30px;
   display: flex;
   background-color: var(--header-buttons);
   height: 100%;
@@ -89,23 +98,38 @@ header {
 
 .header-buttons a{
   text-decoration: none;
-  width: auto;
-  margin-inline: 24px;
-  padding-top: 6px;
+  width: 90px;
+  padding-top: 1px;
   font-size: 17px;
-  font-family: 'Lora', serif;
+  text-align: center;
   color: black;
+  height: 100%;
+  line-height: 78px;
+  box-sizing: border-box;
+  transition: background-color 0.6s;
 }
 
 .header-buttons a:hover{
   text-decoration: underline;
   cursor: pointer;
+  background-color: rgb(235, 232, 255);
+  transition: background-color 0.6s;
+}
+
+#header-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 1000px;
+  margin: auto; 
+  height: 100%; 
 }
 
 /* img-text section */
 .container {
   /* Change this val on media query update */
   height: 500px;
+  background-color: black;
   position: relative;
 }
 
@@ -113,8 +137,8 @@ header {
   height: 500px;
   width: 100%;
   position: absolute;
-  filter: grayscale(70%) blur(1px) brightness(115%);
-  animation-duration: 0.5s;
+  filter: grayscale(70%) blur(0px) brightness(115%);
+  animation-duration: 1s;
   animation-name: imgslidein;
 }
 
@@ -122,56 +146,85 @@ header {
   from {
     margin-top: 5px;
     opacity: 0;
-    height: 510px;
+    margin-top: 100px;
+    height: 460px;
   }
 
   to {
     margin-top: 0;
     opacity: 1;
-    height: 500px;
+    margin-top: 100px;
+    height: 440px;
   }
 }
 
 #landing-img {
-  object-fit: cover;
+  object-fit: contain;
+  margin-top: 100px;
+  height: 440px;
 }
 
 .container h2 {
-  font-family: Didot-R, Helvetica, Arial, sans-serif;
+  font-family: 'Times New Roman', 'Times', serif;
+  font-weight: 500;
   z-index: 5;
   position: absolute;
   margin: 0;
   left: 50%;
-  top: 150px;
+  top: 130px;
   text-align: center;
   transform: translateX(-50%);
-  font-size: 45px;
+  font-size: 38px;
   width: 100%;
+  color: white;
+  animation-duration: 0.8s;
+  animation-name: slideintext;
 }
 
 .container p {
   z-index: 5;
   position: absolute;
   margin: 0;
-  margin-top: 5px;
   left: 50%;
-  top: 200px;
+  top: 179px;
   text-align: center;
   transform: translateX(-50%);
-  font-size: 25px;
+  font-size: 20px;
+  font-weight: bold;  
   width: 100%;
+  color: white;
+  color: rgb(171, 184, 255);
+  transition: margin-top 1s;
+  animation-duration: 0.8s;
+  animation-name: slideintext;
+  font-family: 'Open Sans', Helvetica, sans-serif;
+}
+
+@keyframes slideintext {
+  from {
+    margin-top: 8px;
+    opacity: 0;
+  }
+
+  to {
+    margin-top: 0;
+    opacity: 1;
+  }
 }
 
 /* text-body section */
-#text-body {
+.text-body {
   width: 100%;
   background-color: rgb(247, 247, 247);
-  height: 900px;
   padding-top: 20px;
   position: relative;
 }
 
-#text-body article {
+#index-tb {
+  height: 900px;
+}
+
+.text-body article {
   margin-inline: auto;
   margin-bottom: 20px;
   width: 1000px;
@@ -179,12 +232,16 @@ header {
   border: 1px solid rgb(212, 212, 212);
   box-shadow: 0px 1px 3px #e7e7e7;
   background-color: rgb(254, 255, 255);
+  background-color: transparent;
+  border: none;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  animation-duration: 0.8s;
+  animation-name: slideintext;
 }
 
-#text-body h3 {
+.text-body h3 {
   font-family: 'Lora', serif;
   font-weight: normal;
 }
@@ -203,10 +260,14 @@ header {
   margin: 0;
 }
 
-#text-body article p {
-  font-size: 19px;
-  line-height: 1.1;
+.text-body article p {
+  font-size: 18px;
+  line-height: 1.2;
   margin-bottom: 0;
+}
+
+#a1-text #para1 {
+  font-family: 'Open Sans', Helvetica, sans-serif;
 }
 
 #a1-text p{
@@ -214,7 +275,7 @@ header {
   text-align: left;
 }
 
-#text-body article img{
+.text-body article img{
   height: 320px;
   width: 360px;
   flex: 0 1 360px;
@@ -239,8 +300,6 @@ header {
   margin: 30px;
   margin-right: 5px;
   height: 350px;
-  border-bottom-right-radius: 15px;
-  border-bottom-left-radius: 15px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -255,7 +314,7 @@ form h3{
 }
 
 form #form-header{
-  background-color: rgb(60, 60, 58);
+  background-color: rgb(44, 44, 43);
   width: 100%;
   flex: 0 0 85px;
   display: flex;
@@ -275,8 +334,9 @@ form #form-header{
 form label {
   text-align: left;
   width: 82%;
-  font-size: 16px;
+  font-size: 15px;
   margin-bottom: 2px;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 form input {
@@ -467,7 +527,7 @@ footer {
   font-weight: lighter;
   letter-spacing: 1.2px;
   margin-top: 20px;
-  margin-bottom: 0px;
+  margin-bottom: 5px;
   width: 180px;
   font-family: Futura-L;
 }
@@ -482,6 +542,7 @@ footer {
 
 #footer-flex div p{
   margin: 10px;
+  margin-block: 8px;
   color: #d4d4d2;
   cursor: pointer;
 }

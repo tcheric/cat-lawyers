@@ -13,28 +13,29 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lora&family=Open+Sans&display=swap" rel="stylesheet">
 </head>
 
 <body>
   <!-- your content here... -->
   <header>
-    <a href="">
-      <h1>Meow <span>&</span> Co.</h1>
-    </a>
-    <div class="header-buttons">
-      <div class="arrow-down"></div>
-      <a href="page/expertise.html">Expertise</a>
-      <a href="page/cases.html"> Cases</a>
-      <a href="page/team.html">Team</a>
-      <a href="page/contact.html">Contact</a>
+    <div id="header-wrapper">
+      <a href="">
+        <h1>Meow <span>&</span> Co.</h1>
+      </a>
+      <div class="header-buttons">
+        <a href="page/expertise.html">Expertise</a>
+        <a href="page/cases.html"> Cases</a>
+        <a href="page/team.html">Team</a>
+        <a href="page/contact.html">Contact</a>
+      </div>
     </div>
   </header>
-  <div class="header-space"></div>
+  <!-- <div class="header-space"></div> -->
 
   <section id="img-text">
     <div class="container">
-      <img id="landing-img" src="images/lj.png" alt="Lady Justice">
+      <img id="landing-img" src="images/pero1.jpeg" alt="Lady Justice">
       <h2>Welcome to Meow & Co.</h2>
       <p>
         Expert Criminal Defence Solicitors<br>
@@ -43,11 +44,11 @@
     </div>
   </section>
 
-  <section id="text-body">
+  <section class="text-body" id="index-tb">
     <article class="article-pane">
       <div id="a1-text">
         <h3>Meow & Co. are the leading criminal defence solicitors in the UK</h3>
-        <p>
+        <p id="para1">
           We are a widely admired, top-rated criminal defence law firm based in the heart of the City of London, and our top rated legal aid and private solicitors specialise in financial crime, serious and non-serious other crime, corporate, fraud, and civil & property litigation areas of law. <br><br>Regarded as one of the best firm's of criminal defence solicitors in the UK, we are regularly selected to defend clients appearing in high profile criminal cases that garner national publicity, but every client is special to us, and our hand-picked lawyers are among the most experienced and highly skilled litigators in the country and in their chosen field of specialisation.
         </p>
       </div>
@@ -136,7 +137,7 @@
     </div>
   </footer>
           
-  <script src="js/navbar.js"></script>
+  <script>document.documentElement.setAttribute("scroll-top", "false")</script>
   <script src="js/indexFormSubmit.js"></script>
 </body>
 </html>

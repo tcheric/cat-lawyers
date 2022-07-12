@@ -14,7 +14,7 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lora&family=Open+Sans&display=swap" rel="stylesheet">
 
   <script src="../webComponents/Header.js"></script>
   <script src="../webComponents/Footer.js"></script>
@@ -34,12 +34,12 @@
       <div id="contents">
         <h3>Expertise</h3>
         <ul>
-          <li><a href="#tax">Tax Investigations</a></li>
-          <li><a href="#drugs">Drug Possession</a></li>
-          <li><a href="#kidnapping">Kidnapping</a></li>
-          <li><a href="#theft">Theft</a></li>
-          <li><a href="#stalking">Stalking</a></li>
-          <li id="content-list-last"><a href="#arson">Arson</a></li>
+          <li onclick="location.href='#tax'"><a href="#tax">Tax Investigations</a></li>
+          <li onclick="location.href='#drugs'"><a href="#drugs">Drug Possession</a></li>
+          <li onclick="location.href='#kidnapping'"><a href="#kidnapping">Kidnapping</a></li>
+          <li onclick="location.href='#theft'"><a href="#theft">Theft</a></li>
+          <li onclick="location.href='#stalking'"><a href="#stalking">Stalking</a></li>
+          <li onclick="location.href='#arson'" id="content-list-last"><a href="#arson">Arson</a></li>
         </ul>
       </div>
       <div id="right-text">
@@ -52,7 +52,7 @@
     </article>
   </section>
 
-  <section id="text-body">
+  <section class="text-body" id="expertise-tb">
     <article id="tax" class="article-pane">
       <div class="left-text flex-container">
         <h3>Cat Tax Investigations</h3>

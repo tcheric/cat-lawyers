@@ -155,7 +155,7 @@ section {
 }
 
 .show {
-  animation-duration: 1s;
+  animation-duration: 1.4s;
   animation-name: slidein;
 }
 
@@ -172,7 +172,7 @@ section {
 }
 
 .go {
-  animation-duration: 1s;
+  animation-duration: 1.4s;
   animation-name: slideout;
 }
 
