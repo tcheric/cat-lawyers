@@ -100,7 +100,7 @@ header {
   text-decoration: none;
   width: 90px;
   padding-top: 1px;
-  font-size: 17px;
+  font-size: 18px;
   text-align: center;
   color: black;
   height: 100%;
@@ -190,7 +190,7 @@ header {
   text-align: center;
   transform: translateX(-50%);
   font-size: 20px;
-  font-weight: bold;  
+  /* font-weight: bold;   */
   width: 100%;
   color: white;
   color: rgb(171, 184, 255);
@@ -261,8 +261,8 @@ header {
 }
 
 .text-body article p {
-  font-size: 18px;
-  line-height: 1.2;
+  font-size: 19px;
+  line-height: 1.1;
   margin-bottom: 0;
 }
 
