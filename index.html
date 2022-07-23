@@ -10,15 +10,21 @@
   <link rel="icon" type="image/png" href="images/favicon-32x32.png" sizes="32x32" />
 
   <link rel="stylesheet" href="css/styles.css">
+  <!-- <link rel="stylesheet" href="css/index-header.css"> -->
+  <link rel="stylesheet" href="css/alt-header.css">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Lora&family=Open+Sans&display=swap" rel="stylesheet">
+
+  <script src="webComponents/Header.js"></script>
+  <script src="js/pageLoadWait.js"></script>
+
 </head>
 
 <body>
   <!-- your content here... -->
-  <header>
+  <!-- <header>
     <div id="header-wrapper">
       <a href="">
         <h1>Meow <span>&</span> Co.</h1>
@@ -30,8 +36,10 @@
         <a href="page/contact.html">Contact</a>
       </div>
     </div>
-  </header>
+  </header> -->
   <!-- <div class="header-space"></div> -->
+  <header-component></header-component>
+
 
   <section id="img-text">
     <div class="container">
@@ -82,12 +90,29 @@
       <div id="a2-text">
         <h3>Expertise</h3>
         <ul>
-          <li><a href="page/expertise.html#tax">Tax Investigations</a></li>
-          <li><a href="page/expertise.html#drugs">Drug Possession</a></li>
+          <li onclick="location.href='page/expertise.html#tax'">
+            <a href="page/expertise.html#tax">Tax Investigations</a>
+          </li>
+          <li onclick="location.href='page/expertise.html#drugs'">
+            <a href="page/expertise.html#drugs">Drug Possession</a>
+          </li>
+          <li onclick="location.href='page/expertise.html#kidnapping'">
+            <a href="page/expertise.html#kidnapping">Kidnapping</a>
+          </li>
+          <li onclick="location.href='page/expertise.html#theft'">
+            <a href="page/expertise.html#theft">Theft</a>
+          </li>
+          <li onclick="location.href='page/expertise.html#stalking'">
+            <a href="page/expertise.html#stalking">Stalking</a>
+          </li>
+          <li id="list-last" onclick="location.href='page/expertise.html#arson'">
+            <a href="page/expertise.html#arson">Arson</a>
+          </li>
+          <!-- <li><a href="page/expertise.html#drugs">Drug Possession</a></li>
           <li><a href="page/expertise.html#kidnapping">Kidnapping</a></li>
           <li><a href="page/expertise.html#theft">Theft</a></li>
           <li><a href="page/expertise.html#stalking">Stalking</a></li>
-          <li id="list-last"><a href="page/expertise.html#arson">Arson</a></li>
+          <li id="list-last"><a href="page/expertise.html#arson">Arson</a></li> -->
         </ul>
       </div>
     </article>
@@ -137,7 +162,8 @@
     </div>
   </footer>
           
-  <script>document.documentElement.setAttribute("scroll-top", "false")</script>
+  <!-- <script>document.documentElement.setAttribute("scroll-top", "false")</script> -->
+  <script src="js/navbar.js"></script>
   <script src="js/indexFormSubmit.js"></script>
 </body>
 </html>

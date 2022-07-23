@@ -3,6 +3,12 @@
   src: url(../fonts/Didot-Regular.ttf);
 }
 
+.js-loading *,
+.js-loading *:before,
+.js-loading *:after {
+  animation-play-state: paused !important;
+}
+
 /* Img-text section */
 .container {
   height: 590px;

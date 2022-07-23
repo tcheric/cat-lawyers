@@ -1,3 +1,9 @@
+.js-loading *,
+.js-loading *:before,
+.js-loading *:after {
+  animation-play-state: paused !important;
+}
+
 /* section 1 */
 section {
   background: rgb(15, 15, 15);
@@ -28,6 +34,20 @@ section {
   margin-inline: auto;
   color: white;
   display: flex;
+  animation-duration: 1.2s;
+  animation-name: slideintext;
+}
+
+@keyframes slideintext {
+  from {
+    margin-top: 10px;
+    opacity: 0;
+  }
+
+  to {
+    margin-top: 0;
+    opacity: 1;
+  }
 }
 
 .detail-info {

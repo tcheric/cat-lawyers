@@ -1,0 +1,22 @@
+html[scroll-top="true"] {
+  --header-buttons: transparent;
+  --header: transparent;
+  --shadow: none;
+  --header-buttons-a: rgb(228, 229, 231);
+  --h1-color: rgb(134, 148, 189);
+  --span-color: rgb(219, 211, 187);
+  --a-hover-bg: rgb(67, 62, 99);
+}
+
+html[scroll-top="false"] {
+  --header: rgb(37, 37, 37);
+  --shadow: 0px 2px 4px #000000;
+  --header-buttons-a: black;
+  --h1-color: rgb(62, 54, 45);
+  --span-color: rgb(134, 148, 189);
+  --a-hover-bg: rgb(235, 232, 255);
+  --header-buttons-a: rgb(228, 229, 231);
+  --h1-color: rgb(134, 148, 189);
+  --span-color: rgb(219, 211, 187);
+  --a-hover-bg: rgb(67, 62, 99);
+}
