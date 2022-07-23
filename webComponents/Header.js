@@ -43,8 +43,8 @@ class Header extends HTMLElement {
           </div>
         </header>
       `
-    } else if ((window.location.href === "https://cerulean-sopapillas-9177e3.netlify.app/page/index.html") || 
-      (window.location.href === "https://cerulean-sopapillas-9177e3.netlify.app") ||
+    } else if ((window.location.href === "https://cerulean-sopapillas-9177e3.netlify.app/") || 
+      (window.location.href === "https://cerulean-sopapillas-9177e3.netlify.app/index.html") ||
       (window.location.href === "file:///home/erictc/misc/cat-lawyers/index.html")) {
       console.log("set urls")
       headerTemplate.innerHTML = `
