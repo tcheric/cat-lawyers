@@ -96,13 +96,14 @@ header {
 
 .header-buttons a{
   text-decoration: none;
-  width: 90px;
+  width: 100px;
   padding-top: 1px;
-  font-size: 18px;
+  font-size: 17px;
   text-align: center;
   color: var(--header-buttons-a);
   height: 100%;
   line-height: 78px;
+  font-family: 'Open Sans', Helvetica, sans-serif;
   box-sizing: border-box;
   transition: background-color 0.6s;
 }

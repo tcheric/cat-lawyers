@@ -117,14 +117,15 @@ header {
 
 .header-buttons a{
   text-decoration: none;
-  width: 90px;
+  width: 100px;
   padding-top: 1px;
-  font-size: 18px;
+  font-size: 17px;
   text-align: center;
   color: black;
   height: 100%;
   line-height: 78px;
   box-sizing: border-box;
+  font-family: 'Open Sans', Helvetica, sans-serif;
   transition: background-color 0.6s;
 }
 
@@ -219,6 +220,8 @@ header {
   animation-duration: 1.2s;
   animation-name: slideintext;
   font-family: 'Open Sans', Helvetica, sans-serif;
+  font-family: 'Times New Roman', Times, serif;
+  font-family: 'Lora', Times, serif;
 }
 
 @keyframes slideintext {
