@@ -1,4 +1,4 @@
-/* Header.js webcomponent does not consider the following html attributes */
+/* Header.js webcomponent does consider the following html attributes */
 
 html[scroll-top="true"] {
   --header-buttons: transparent;
@@ -13,10 +13,10 @@ html[scroll-top="true"] {
 html[scroll-top="false"] {
   --header: rgb(32, 32, 32);
   --shadow: 0px 2px 4px #000000;
-  --header-buttons-a: black;
+  /* --header-buttons-a: black;
   --h1-color: rgb(62, 54, 45);
   --span-color: rgb(134, 148, 189);
-  --a-hover-bg: rgb(235, 232, 255);
+  --a-hover-bg: rgb(235, 232, 255); */
   --header-buttons-a: rgb(228, 229, 231);
   --h1-color: rgb(134, 148, 189);
   --span-color: rgb(219, 211, 187);
@@ -96,9 +96,10 @@ header {
 
 .header-buttons a{
   text-decoration: none;
-  width: 100px;
+  width: auto;
+  padding-inline: 15px;
   padding-top: 1px;
-  font-size: 17px;
+  font-size: 18px;
   text-align: center;
   color: var(--header-buttons-a);
   height: 100%;

@@ -117,9 +117,10 @@ header {
 
 .header-buttons a{
   text-decoration: none;
-  width: 100px;
+  width: auto;
+  padding-inline: 15px;
   padding-top: 1px;
-  font-size: 17px;
+  font-size: 18px;
   text-align: center;
   color: black;
   height: 100%;
